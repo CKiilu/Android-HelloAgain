@@ -26,6 +26,16 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+        final TextView firstTextView = (TextView) findViewById(R.id.textView);
+
+        Button firstButton =(Button) findViewById(R.id.firstbutton);
+
+        firstButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                firstTextView.setText("You clicked!");
+            }
+        });
     }
 
     @Override
